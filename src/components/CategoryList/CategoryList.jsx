@@ -28,7 +28,7 @@ const CategoryList = () => {
                                 transition={{duration: 1, ease: 'easeOut', type: 'spring', stiffness: '200'}}
                                 className="category__container"
                                 key={category.idCategory}>
-                                <Link to={`/category/${category.strCategory}`} className="category">
+                                <Link to={`/meal-recipe-website-reactjs/category/${category.strCategory}`} className="category">
                                     <div className="category__img">
                                         <img src={category.strCategoryThumb} alt="Food" />
                                     </div>
