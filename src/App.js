@@ -22,7 +22,7 @@ function App() {
             <Routes>
               <Route path="/meal-recipe-website-reactjs/" element={<Homepage/>}/>
               <Route path="/meal-recipe-website-reactjs/find" element={<Findpage/>}/>
-              <Route path="/meal/:idMeal" element={<MealDetailsPage/>}/>
+              <Route path="/meal-recipe-website-reactjs/meal/:idMeal" element={<MealDetailsPage/>}/>
               <Route path="/meal-recipe-website-reactjs/categories" element={<CategoryList/>}/>
               <Route path="/meal-recipe-website-reactjs/category/:strCategory" element={<Category/>}/>
               <Route path="/meal-recipe-website-reactjs/random" element={<Random/>}/>
