@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/meal-recipe-website-reactjs/static/css/main.5b6b63fb.css",
-    "main.js": "/meal-recipe-website-reactjs/static/js/main.5c356b51.js",
+    "main.js": "/meal-recipe-website-reactjs/static/js/main.7ce26b5f.js",
     "static/js/787.2bff398b.chunk.js": "/meal-recipe-website-reactjs/static/js/787.2bff398b.chunk.js",
     "static/media/About.png": "/meal-recipe-website-reactjs/static/media/About.f15fd27e9896dd362152.png",
     "static/media/HeroImg.png": "/meal-recipe-website-reactjs/static/media/HeroImg.f255cc85194d96d1e91a.png",
@@ -11,11 +11,11 @@
     "static/media/video.gif": "/meal-recipe-website-reactjs/static/media/video.a31066ca67c66135d829.gif",
     "index.html": "/meal-recipe-website-reactjs/index.html",
     "main.5b6b63fb.css.map": "/meal-recipe-website-reactjs/static/css/main.5b6b63fb.css.map",
-    "main.5c356b51.js.map": "/meal-recipe-website-reactjs/static/js/main.5c356b51.js.map",
+    "main.7ce26b5f.js.map": "/meal-recipe-website-reactjs/static/js/main.7ce26b5f.js.map",
     "787.2bff398b.chunk.js.map": "/meal-recipe-website-reactjs/static/js/787.2bff398b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b6b63fb.css",
-    "static/js/main.5c356b51.js"
+    "static/js/main.7ce26b5f.js"
   ]
 }
