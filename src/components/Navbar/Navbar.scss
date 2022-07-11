@@ -1,0 +1,197 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85vw;
+    margin: 0 auto;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+
+
+    .nav__brand {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 30px;
+        }
+
+        h2{
+            font-weight: 800;
+            color: #F5822C;
+        }
+        .logo__last{
+            color: #000000;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 1rem 0;
+
+        .nav__links {
+            display: block;
+            width: 230px;
+            transition: .4s ease-in-out;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            bottom: 0;
+            padding: 5rem 0;
+            z-index: 100;
+            
+            li {
+                margin: 3rem;
+                text-align: center;
+                
+                a {
+                    font-size: 4rem;
+                    i {
+                        color: #fff8f8;
+                        transition: .4s ease-in-out;
+                    }
+                    
+                    i:hover {
+                        transform: scale(1.4);
+                        transition: .4s ease-in-out;
+                    }
+                }
+    
+                .links {
+                    cursor: pointer;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 1rem;
+                    color: rgb(255, 255, 255);
+                    border-bottom: 3px solid rgba(255, 255, 255, 0);
+                    color: rgb(70, 58, 58);
+                    margin: 0;
+                    transition: .4s ease-in-out;
+                    color: #FFFF;
+                }
+                
+                .links:hover {
+                    border-bottom: 3px solid #FFFF;
+                }
+            }
+        }
+        
+        .nav__active {
+            justify-content:center;
+            position: fixed;
+            top: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            gap: 1rem;
+            background:#f18343;
+            transition: .4s ease-in-out;
+        }
+        
+        .is-Active {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 999;
+        }
+    
+        .nav__hamburger{
+            cursor: pointer;  
+            display: block;
+            position: relative;
+            z-index: 101;
+            
+            user-select: none;
+        
+            appearance: none;
+            border: none;
+            outline: none;
+            background: none;
+        
+            span{
+                display: block;
+                position: relative;
+                background: black;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                border-radius: 6px;
+                transform-origin: 0,0;
+                transition: .4s;
+        
+            }
+            &:hover span:nth-child(2){
+                background: #F5822C;
+                transform: translateX(15px);
+            }
+        }
+        
+        .is-active span:nth-child(1){
+            transform: translate(0px, 10px) rotate(45deg);
+            background: rgb(255, 255, 255);
+        }
+        .is-active span:nth-child(2){
+            opacity: 0;
+            transform: translateX(10px);
+        }
+        .is-active span:nth-child(3){
+            transform: translate(0px, -8px) rotate(-45deg);
+            background: rgb(255, 255, 255);
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        .nav__links {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 40%;
+            position: relative;
+    
+            li {
+                margin: 0.5rem;
+                
+                .links {
+                    cursor: pointer;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: .7rem 1rem;
+                    transition: .4s ease-in-out;
+                    border-bottom: 4px solid #FFFF;
+                    color: rgb(70, 58, 58);
+                    margin: 0;
+                }
+                
+                .links:hover {
+                    border-bottom: 4px solid #F5822C;
+                }
+                
+                i {
+                    font-size: 2rem;
+                    color: #000000;
+                    transition: .4s ease-in-out;
+                }
+        
+                i:hover {
+                    transform: scale(1.4);
+                }
+            }
+        }
+    
+        .nav__hamburger {
+            display: none;
+        }
+
+        .nav__active {
+            display: flex;
+            position: relative;
+            background: none;
+        }
+    }
+}

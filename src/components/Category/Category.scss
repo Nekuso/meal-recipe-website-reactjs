@@ -1,0 +1,20 @@
+@import "../MealDetailsPage/MealDetailsPage.scss";
+
+.category__details {
+
+    .loading__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        width: 85vw;
+        height: 50vh;
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: 2rem;
+        img {
+            width: 40px;
+            margin-right: 1rem;
+        }
+    }
+}

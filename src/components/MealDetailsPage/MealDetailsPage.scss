@@ -1,0 +1,400 @@
+.meal__details__page {
+    width: 100%;
+    width: 100%;
+    .loading__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85vw;
+        height: 50vh;
+        padding: 2rem;
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: 2rem;
+        img {
+            width: 40px;
+            margin-right: 1rem;
+        }
+    }
+
+    .meal__details {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2.5rem;
+
+        .left__container {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+            
+            img{
+                width: 100%;
+                transition: .4s ease-in-out;
+                border: 1px solid #000;
+                transform: translate(-7px, -7px);
+                // box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.253);
+                box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+                
+                &:hover {
+                    box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+                    transform: scale(1.4) translateX(10vw) translateY(10vw);
+                }
+            }
+
+            .meal__name {
+                display: grid;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                padding: 1rem;
+                margin-left: 2%;
+                h2 {
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 2rem;
+                    border-bottom: .5rem solid rgb(0, 0, 0);
+                    margin-bottom: .5rem;
+                }
+                p {
+                    font-size: .8rem;
+                    font-weight: 500;
+                }
+                .meal__area {
+                    font-size: 1.1rem;
+                    color: #F5822C;
+                }
+
+            }
+        }
+        
+        .body__container {
+            display: grid;
+            width: 100%;
+            column-gap: 2rem;
+            .ingredients__container {
+                border-radius: 1rem;
+                margin: 1.5rem 0;
+                margin-bottom: 0;
+    
+                h2 {
+                    margin: 1rem 0;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 30px;
+                    }
+                }
+                .ingredients {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: .4rem;
+                    width: 100%;
+                    margin: .5rem 0;
+                    
+                    .ingredient {
+                        cursor: pointer;
+                        display: grid;
+                        grid-template-columns: 30% 70%;
+                        align-items: center;
+                        justify-content: center;
+                        background: rgb(255, 226, 199);
+                        border-radius: 1rem;
+                        text-align: center;
+                        width: 40%;
+                        padding: .7rem;
+                        border: 1px solid #ffffff00;
+                        transition: .4s ease-in-out;
+                        
+                        img {
+                            width: 100%;
+                            padding: .1rem;
+                            margin: 0 auto;
+                            background: rgb(253, 253, 253);
+                            border-radius: .5rem;
+                        }
+    
+                        .ingredient__info {
+                            display: grid;
+                            text-align: center;
+                            h2 {
+                                margin: 0 auto;
+                                font-size: .8rem;
+                            }
+                            p {
+                                margin: 0 auto;
+                                font-size: .8rem;
+                            }
+                        }
+                        
+                        &:hover {
+                            transform: translate(-5px, -5px);
+                            border: 1px solid #000;
+                            box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+                        }
+                        
+                    }
+                }
+            }
+    
+            .instruction__container {
+                margin: 1.5rem 0;
+    
+                h2 {
+                    margin: 1rem 0;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 30px;
+                    }
+                }
+                
+                .instruction {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    width: 100%;
+                    p {
+                        width: 100%;
+                        color: rgb(0, 0, 0);
+                        cursor: pointer;
+                        border-radius: 1.5rem;
+                        padding: 1.5rem 1rem;
+                        background: rgb(255, 226, 199);
+                        border: .5px solid rgb(97, 97, 97);
+                        transition: .4s ease-in-out;
+                        
+                        &:hover {
+                            transform: translate(-7px, -7px);
+                            // box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.253);
+                            box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .video__container {
+            h2 {
+                margin: 1rem 0;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 30px;
+                }
+            }
+            .video {
+                display: grid;
+                width: 100%;
+                border-radius: 1rem;
+                overflow: hidden;
+                transition: .4s ease-in-out;
+    
+                &:hover {
+                    transform: translate(-7px, -7px);
+                    box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .meal__details__page {
+        .meal__details{
+            margin: 2rem auto;
+            max-width: 80vw;
+            .left__container {
+                grid-template-columns: 40% 60%;
+
+                .meal__name {
+                    h2 {
+                        font-weight: 800;
+                        font-size: 3.5rem;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                    }
+                    .meal__area {
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .body__container {
+                justify-content: space-around;
+                grid-template-columns: 46% 46%;
+                max-height: 700px;
+                overflow-y: hidden;
+
+                ::-webkit-scrollbar { 
+                    display: none; 
+                }
+
+                .ingredients__container {
+                    h2 {
+                        font-size: 2rem;
+                        margin: 1rem 0;
+                    }
+                    
+                    .ingredients {
+                        max-height: 500px;
+                        overflow-y: scroll;
+                        justify-content: center;
+                        gap: 1rem;
+                        margin: 0;
+                        background: rgb(255, 226, 199);
+                        border-radius: 1rem;
+                        padding: 1rem 0;
+                        border: 1px solid #000000;
+                        transition: .4s ease-in-out;
+
+                        &:hover {
+                            transform: translate(-7px, -7px);
+                            box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+                        }
+
+                        .ingredient {
+                            width:38%;
+                            .ingredient__info {
+                                h2 {
+                                    font-size: .8rem;
+                                }
+                                p {
+                                    font-size: .7rem;
+                                }
+                            }
+
+                            &:hover {
+                                color: white;
+                                background: #F5822C;
+                                transform: translate(-7px, -7px);
+                            }
+                        }
+                    }
+                }
+                
+                .instruction__container {
+                    h2 {
+                        font-size: 2rem;
+                        margin: 1rem 0;
+                    }
+                    
+                    .instruction {
+                        overflow-y: scroll;
+                        max-height: 500px;
+                        background: rgb(255, 226, 199);
+                        border: 1px solid #000000;
+                        border-radius: 1rem;
+                        padding: 1rem 0;
+                        transition: .4s ease-in-out;
+                        
+                        &:hover {
+                            transform: translate(-7px, -7px);
+                            box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+                        }
+
+                        p {
+                            width: 90%;
+                            font-size: 1rem;
+                            border: 1px solid #ffffff00;
+                            
+                            &:hover {
+                                color: white;
+                                background: #F5822C;
+                                border: 1px solid #000000;
+                            }
+                        }
+                    }
+                }
+            }
+            .video__container {
+                h2 {
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                    img {
+                        width: 60px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .meal__details__page {
+        .meal__details{
+            max-width: 75vw;
+            .left__container {
+                grid-template-columns: 30% 70%;
+
+                .meal__name {
+                    h2 {
+                        font-weight: 800;
+                        font-size: 6rem;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                    }
+                    .meal__area {
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .body__container {
+                .ingredients__container {
+                    h2 {
+                        font-size: 2.5rem;
+                        img {
+                            width: 60px;
+                        }
+                    }
+    
+                    .ingredients {
+                        gap: 1rem;
+                        justify-content: center;
+    
+                        .ingredient {
+                            width: 40%;
+    
+                            .ingredient__info {
+                                h2 {
+                                    font-size: 1rem;
+                                }
+                                p {
+                                    font-size: .8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .instruction__container {
+                    h2 {
+                        font-size: 2.5rem;
+                        img {
+                            width: 60px;
+                        }
+                    }
+    
+                    .instruction {
+                        p {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
