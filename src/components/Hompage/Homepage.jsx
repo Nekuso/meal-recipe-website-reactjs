@@ -80,7 +80,7 @@ const Homepage = () => {
                                 exit={{opacity: 0}}
                                 transition={{duration: 1, delay:1, ease: 'easeOut', type: 'spring', stiffness: '200'}}>
                                 
-                                    <Link to={`/meal/${featured1.idMeal}`} className="meal__item">
+                                    <Link to={`/meal-recipe-website-reactjs/meal/${featured1.idMeal}`} className="meal__item">
                                         <img src={featured1.strMealThumb} alt="" />
                                         <div className="meal__lowered">
                                             <h3>{featured1.strMeal}</h3>
@@ -100,7 +100,7 @@ const Homepage = () => {
                                 exit={{opacity: 0}}
                                 transition={{duration: 1, delay:1, ease: 'easeOut', type: 'spring', stiffness: '200'}}>
                                     
-                                    <Link to={`/meal/${featured2.idMeal}`} className="meal__item">
+                                    <Link to={`/meal-recipe-website-reactjs/meal/${featured2.idMeal}`} className="meal__item">
                                         <img src={featured2.strMealThumb} alt="" />
                                         <div className="meal__lowered">
                                             <h3>{featured2.strMeal}</h3>
@@ -120,7 +120,7 @@ const Homepage = () => {
                                     exit={{opacity: 0}}
                                     transition={{duration: 1, delay:1, ease: 'easeOut', type: 'spring', stiffness: '200'}}>
                                     
-                                    <Link to={`/meal/${featured3.idMeal}`} className="meal__item">
+                                    <Link to={`/meal-recipe-website-reactjs/meal/${featured3.idMeal}`} className="meal__item">
                                         <img src={featured3.strMealThumb} alt="" />
                                         <div className="meal__lowered">
                                             <h3>{featured3.strMeal}</h3>
