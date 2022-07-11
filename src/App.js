@@ -20,12 +20,12 @@ function App() {
         <div className="content">
           <AnimatePresence exitBeforeEnter>
             <Routes>
-              <Route path="/" element={<Homepage/>}/>
-              <Route path="/find" element={<Findpage/>}/>
+              <Route path="/meal-recipe-website-reactjs/" element={<Homepage/>}/>
+              <Route path="/meal-recipe-website-reactjs/find" element={<Findpage/>}/>
               <Route path="/meal/:idMeal" element={<MealDetailsPage/>}/>
-              <Route path="/categories" element={<CategoryList/>}/>
-              <Route path="/category/:strCategory" element={<Category/>}/>
-              <Route path="/random" element={<Random/>}/>
+              <Route path="/meal-recipe-website-reactjs/categories" element={<CategoryList/>}/>
+              <Route path="/meal-recipe-website-reactjs/category/:strCategory" element={<Category/>}/>
+              <Route path="/meal-recipe-website-reactjs/random" element={<Random/>}/>
             </Routes>
           </AnimatePresence>
         </div>

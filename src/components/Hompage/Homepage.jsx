@@ -38,8 +38,8 @@ const Homepage = () => {
                             animate={{opacity: 1, x: 0 }}
                             transition ={{ duration: 1 ,delay: .6, type: 'spring', ease: 'easeOut'}}>
                                 <div className="left__buttons">
-                                    <Link to="/find" className="find__btn btn">Find Meal</Link>
-                                    <Link to="/random" className="random__btn btn"><i className='bx bxs-dice-5 bx-tada bx-rotate-90' ></i>Random</Link>
+                                    <Link to="/meal-recipe-website-reactjs/find" className="find__btn btn">Find Meal</Link>
+                                    <Link to="/meal-recipe-website-reactjs/random" className="random__btn btn"><i className='bx bxs-dice-5 bx-tada bx-rotate-90' ></i>Random</Link>
                                 </div>
                         </motion.div>
                 </div>

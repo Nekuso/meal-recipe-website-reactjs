@@ -21,15 +21,15 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <Link to="/"className="nav__brand">
+            <Link to="/meal-recipe-website-reactjs/"className="nav__brand">
                 <img src={Logo} alt="Logo"/>
                 <h2>Hey</h2><h2 className="logo__last">Meal</h2>
             </Link>
 
             <ul className={navActive}>
-                <li><Link to="/" onClick={navToggle} className="links" >Home</Link></li>
-                <li><Link to="/categories" onClick={navToggle} className="links" >Categories</Link></li>
-                <li><Link to="/random" onClick={navToggle} href="/" className="links" >Random</Link></li>
+                <li><Link to="/meal-recipe-website-reactjs/" onClick={navToggle} className="links" >Home</Link></li>
+                <li><Link to="/meal-recipe-website-reactjs/categories" onClick={navToggle} className="links" >Categories</Link></li>
+                <li><Link to="/meal-recipe-website-reactjs/random" onClick={navToggle} href="/" className="links" >Random</Link></li>
                 <li><a onClick={navToggle} rel="noopener noreferrer" target="_blank" href="https://github.com/Nekuso"><i className='bx bxl-github'></i></a></li>
             </ul>
             <button onClick={navToggle} className={btnActive}>
