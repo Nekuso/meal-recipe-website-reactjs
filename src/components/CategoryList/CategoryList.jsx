@@ -20,12 +20,12 @@ const CategoryList = () => {
                 <div className="categories__container">
                     <h2>Categories</h2>
                     <div className="categories">
-                        {categories.map(category => (
+                        {categories.map((category, index) => (
                             <motion.div
                                 initial={{opacity: 0, y: 10}}
                                 animate={{opacity: 1, y: 0 }}
                                 exit={{opacity: 0, y: 10}}
-                                transition={{duration: 1, ease: 'easeOut', type: 'spring', stiffness: '200'}}
+                                transition={{duration: 1, ease: 'easeOut', type: 'spring', stiffness: '200', delay: index * 0.3,}}
                                 className="category__container"
                                 key={category.idCategory}>
                                 <Link to={`/meal-recipe-website-reactjs/category/${category.strCategory}`} className="category">
