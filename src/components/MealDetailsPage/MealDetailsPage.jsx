@@ -20,11 +20,13 @@ const MealDetailsPage = () => {
         <div className="meal__details__page">
             {isPending && 
                 <motion.div 
-                        initial={{opacity: 0, y: 10}}
-                        animate={{opacity: 1, y: 0 }}
-                        exit={{opacity: 0, y: 10}}
-                        transition={{duration: 1, ease: 'easeOut', type: 'spring', stiffness: '200'}}
-                    className="loading__container"><img src={Loading} alt="Loading" /> Loading...</motion.div>}
+                    initial={{opacity: 0, y: 10}}
+                    animate={{opacity: 1, y: 0 }}
+                    exit={{opacity: 0, y: 10}}
+                    transition={{duration: 1, ease: 'easeOut', type: 'spring', stiffness: '200'}}
+                    className="loading__container"><img src={Loading} alt="Loading" /> Loading...
+                </motion.div>
+            }
             {error && <div>{error}</div>}
             {meal && (
                 <div>
